@@ -4,9 +4,9 @@
   
   /* brand color palette */
   :root {
-    --primary: rgb(94, 68, 119);
-    --secondary: rgb(185, 28, 161);
-    --tertiary: rgb(70, 32, 102);
+    --primary: rgb(201, 0, 0);
+    --secondary: rgb(162, 4, 4);
+    --tertiary: rgb(0, 0, 0);
     --dark: rgba(28, 29, 33, 1);
     --light: rgba(238, 238, 247, 1);
   }
@@ -81,11 +81,12 @@
   main {
     margin-top: 20px;
     margin-bottom: 45px;
+    width: auto;
   }
   
   .hero-banner {
     background: rgb(68, 88, 120);
-    background-image: url('./images/Wunna_Gunna.webp'), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+    background-image: url('./images/itachi-uchiha-naruto-black-background-minimal-art-amoled-1242x2208-4942.png'), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
     background-size: cover;
     background-position: center;
     background-blend-mode: soft-light;
@@ -130,7 +131,7 @@
   .page-section p {
     margin-bottom: 20px;
   }
-  
+
   .about div p {
     font-size: 100px;
   }
@@ -161,4 +162,31 @@
   .contact address a:hover {
     background-size: 100% 88%;
     color: var(--secondary);
+  }
+
+  .card-column {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    /* when the screen resizes, make it so our columns don't jump in size */
+    transition: flex-basis 500ms linear;
+    margin-bottom: 1.5rem;
+  }
+  .projects {
+    display: block;
+    flex-wrap: wrap;
+    height: 400px;
+    width: 400px;
+    padding: 10px;
+    justify-content: space-evenly;
+  }
+  .projects:hover {
+    background-size: 100% 88%;
+    color: var(--secondary);
+  }
+
+  .info {
+    display: flexbox;
+    width: 80px;
+    background:rgb(0, 0, 0)
+
   }
